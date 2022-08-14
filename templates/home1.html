@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link rel="stylesheet" href="../static/css/homecss.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="../static/css/homecss.css">
-    <title>Document</title>
-</head>
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+   <link rel="stylesheet" href="../static/css/homecss1.css">
+ 
+    <title>home page</title>
+</head>
 <body>
     <div class="heropg">
-        <img class="homeimage" src="../static/img/Group 1.jpg" alt="">
+
+        <img  class="homeimage" src="../static/img/Group 1.jpg" alt="" >
         <nav class="navlinks">
+
             <div class="logo">
                 <img src="../static/img/logo.png"
                     alt="logo">
             </div>
+
             <div class="nav">
                 <a href="">Home</a><a href="">Contact</a><a href="">About us</a>
             </div>
+
             <div class="btns">
                 <button type="button" class="btn btn-primary" onclick="clicking_log()">Sign In</button>
                 <button type="button" class="btn btn-outline-warning reg" onclick="clicking_reg()">Regiester</button>
-            </div>
+            </div> 
+
         </nav>
+
         <div class="boxer" id="rbtn">
             <a href="p_details"><button type="button" class="btn btn-info">Regiester as Student</button></a><br>
             <a href="i_details"><button type="button" class="btn btn-info">Regiester as Institute</button></a>
         </div>
+
         <div class="boxer" id="lbtn">
             <a href="login"><button type="button" class="btn btn-info">Login as Student</button></a><br>
             <a href="i_login"><button type="button" class="btn btn-info">Login as Institute</button></a>
         </div>
+
         <div class="para">
             <p>This website acts as a link between the financially weak students who cannot afford to get coaching for
                 various competitive examinations.</p>
             <button type="button" class="btn btn-warning">Register now
             </button>
         </div>
+        
     </div>
 
-    
     <div class="secdiv">
         <div class="utube">
             <h2>What we do?</h2>
@@ -78,7 +83,7 @@
                     quickly sort the students who deserve the opportunity and produce results which speed up the process
                     at par level in comparison to the conventional offline mode.</p>
             </div>
-            <img src="{% static 'img/1.png' %}" alt="">
+            <img src="../static/img/1.png" alt="">
         </div>
         <div class="cont">
             <div class="info">
@@ -89,7 +94,7 @@
                     increased as now one has to not travel to fill and submit there form or to check the status of the
                     same.</p>
             </div>
-            <img src="{% static 'img/2.png' %}" alt="">
+            <img src="../static/img/2.png" alt="">
         </div>
         <div class="cont">
             <div class="info">
@@ -101,40 +106,40 @@
                     hence to resolve the problem we have a section which tracks the funding given to the institutes and
                     shows the pending funds hence making the Government to work efficiently in this arena as well.</p>
             </div>
-            <img src="{% static 'img/3.png' %}" alt="">
+            <img src="../static/img/3.png " alt="">
         </div>
         <div class="footer">
             <center>© 2022 - All Rights Reserved</center>
         </div>
     </div>
-<script>
-    function clicking_reg(){
-        console.log("happy");
-        if(document.getElementById('rbtn').style.display=='none'){
-            document.getElementById('rbtn').style.display='inline-block';
-        }
-        else{
-            document.getElementById('rbtn').style.display='none';
-        }
-        var a=0;
-        if(document.getElementById('lbtn').style.display=='inline-block'){
-            document.getElementById('lbtn').style.display='none';
-        }
-    }
-    function clicking_log(){
-        console.log("happy");
-        if(document.getElementById('lbtn').style.display=='none'){
-            document.getElementById('lbtn').style.display='inline-block';
-        }
-        else{
-            document.getElementById('lbtn').style.display='none';
-        }
-        var b=0;
-        if(document.getElementById('rbtn').style.display=='inline-block'){
-            document.getElementById('rbtn').style.display='none';
-        }
-    }
-</script>
-</body>
 
+    <script>
+        function clicking_reg(){
+            console.log("happy");
+            if(document.getElementById('rbtn').style.display=='none'){
+                document.getElementById('rbtn').style.display='inline-block';
+            }
+            else{
+                document.getElementById('rbtn').style.display='none';
+            }
+            var a=0;
+            if(document.getElementById('lbtn').style.display=='inline-block'){
+                document.getElementById('lbtn').style.display='none';
+            }
+        }
+        function clicking_log(){
+            console.log("happy");
+            if(document.getElementById('lbtn').style.display=='none'){
+                document.getElementById('lbtn').style.display='inline-block';
+            }
+            else{
+                document.getElementById('lbtn').style.display='none';
+            }
+            var b=0;
+            if(document.getElementById('rbtn').style.display=='inline-block'){
+                document.getElementById('rbtn').style.display='none';
+            }
+        }
+    </script>
+</body>
 </html>
